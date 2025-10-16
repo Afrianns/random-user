@@ -6,13 +6,15 @@ import lineOne from "./assets/lineOne.svg";
 
 import type { UserType } from "./types/userType";
 
+import Loading from "./components/loading";
+
 import Address from "./components/address";
 import Registered from "./components/registered";
 import LoginData from "./components/loginData";
 import Location from "./components/location";
 import Id from "./components/id";
+
 import convertDate from "./utils/convertDate";
-import Loading from "./components/loading";
 
 function App() {
   const [user, setUser] = useState<UserType>();
