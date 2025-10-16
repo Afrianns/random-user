@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@theme {
+  --font-work-sans: "Work sans", sans-serif;
+  --font-rubik: "Rubik", sans-serif;
+}
+
+body {
+  @apply bg-gray-100 font-work-sans;
+}
+
+.main-container {
+  @apply max-w-[550px] mx-auto space-y-2 bg-white p-3 rounded-2xl shadow-sm border border-gray-100;
+}
+
+.card {
+  @apply border border-gray-300 rounded-md py-1 px-5 cursor-pointer ;
+}
+
+::-webkit-scrollbar {
+  @apply my-5 w-2 h-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  scrollbar-width: "thin";
+  @apply bg-gray-300 py-5 rounded-xl;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}
